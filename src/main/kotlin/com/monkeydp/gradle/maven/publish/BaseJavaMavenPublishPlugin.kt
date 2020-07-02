@@ -9,7 +9,7 @@ import org.gradle.kotlin.dsl.get
  * @author iPotato-Work
  * @date 2020/7/2
  */
-abstract class BaseMavenPublishJavaPlugin : BaseMavenPublishPlugin() {
+abstract class BaseJavaMavenPublishPlugin : BaseMavenPublishPlugin() {
     override fun Project.configPublishing() {
         publishing {
             repositories {
