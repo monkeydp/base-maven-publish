@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "com.monkeydp.gradle"
-version = "1.0.0.RELEASE"
+version = "1.0.1-SNAPSHOT"
 java.sourceCompatibility = JavaVersion.VERSION_1_8
 
 dependencies {
