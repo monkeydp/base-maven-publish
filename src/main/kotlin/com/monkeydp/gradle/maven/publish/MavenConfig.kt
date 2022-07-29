@@ -24,7 +24,9 @@ interface MavenConfig {
     fun getRepoUri(repoType: MavenRepoType): URI
 }
 
-abstract class AbstractMavenConfig : MavenConfig {
+abstract class AbstractMavenConfig(
+    override val baseUrl:String,
+) : MavenConfig {
     override val repoUrl = "$baseUrl/repository"
     override val releaseRepoUrl = "$repoUrl/maven-releases/"
     override val snapshotRepoUrl = "$repoUrl/maven-snapshots/"
