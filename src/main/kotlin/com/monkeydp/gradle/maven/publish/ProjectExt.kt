@@ -10,6 +10,6 @@ import org.gradle.api.Project
  */
 val Project.mavenRepoType
     get() =
-        if (version.toString().endsWith(RELEASE.name))
-            RELEASE
-        else SNAPSHOT
+        if (version.toString().endsWith(SNAPSHOT.name))
+            SNAPSHOT
+        else RELEASE
