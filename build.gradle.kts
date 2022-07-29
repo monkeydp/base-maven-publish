@@ -1,11 +1,11 @@
 plugins {
-    kotlin("jvm") version "1.3.72"
+    kotlin("jvm") version "1.7.10"
     `java-gradle-plugin`
     `maven-publish`
 }
 
 group = "com.monkeydp.gradle"
-version = "1.0.1-SNAPSHOT"
+version = "2.0.0-SNAPSHOT"
 java.sourceCompatibility = JavaVersion.VERSION_1_8
 
 dependencies {

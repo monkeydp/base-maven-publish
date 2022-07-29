@@ -13,4 +13,5 @@ fun RepositoryHandler.maven(config: MavenConfig, repoType: MavenRepoType) =
             it.username = config.username
             it.password = config.password
         }
+        config.options?.invoke(repo)
     }

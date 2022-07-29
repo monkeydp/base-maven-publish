@@ -2,6 +2,7 @@ package com.monkeydp.gradle.maven.publish
 
 import com.monkeydp.gradle.maven.publish.MavenRepoType.RELEASE
 import com.monkeydp.gradle.maven.publish.MavenRepoType.SNAPSHOT
+import org.gradle.api.artifacts.repositories.MavenArtifactRepository
 import java.net.URI
 
 /**
@@ -17,6 +18,8 @@ interface MavenConfig {
     val snapshotRepoUri: URI
     val username: String
     val password: String
+    val options: (MavenArtifactRepository.() -> Unit)?
+        get() = null
 
     fun getRepoUri(repoType: MavenRepoType): URI
 }
